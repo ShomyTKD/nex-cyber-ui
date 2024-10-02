@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    --green-color: #94F0D6;
+    --yelow-color: #f7db9f;
+    --red-shadow: #8f2403;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+.message-wrapper {
+    width: 380px;
+    height: 150px;
+    margin-top: 20rem;
+    padding: 1rem;
+    float: right;
+    color: var(--yelow-color);
+    filter: drop-shadow(1px 1px 6px var(--red-shadow));
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.message-bottom {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    margin-left: 2rem;
+    padding: .2rem;
+}
+
+.message-icon {
+    width: 20px;
+    height: 20px;
+}
