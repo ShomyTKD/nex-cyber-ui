@@ -1,7 +1,7 @@
 window.addEventListener('message', function (event) {
     if (event.data.message == "showTask") {
         $('.message-wrapper').fadeIn(100)
-        if (event.data.type == "warning") {
+        if (event.data.type == "important") {
             $('.message-wrapper').css('color', '#f7db9f')
             $('.message-wrapper').css('filter', 'drop-shadow(1px 1px 6px #8f2403)')
             $('.message-icon').css('filter', 'invert(93%) sepia(17%) saturate(898%) hue-rotate(330deg) brightness(96%) contrast(101%)')

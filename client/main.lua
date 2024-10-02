@@ -20,9 +20,9 @@ RegisterCommand('nex:showNormalTask', function()
     TriggerEvent('nex-tasks:client:showTask', 'GIG: FREEDOM OF THE PRESS', 'Collect your reward.')
 end, false)
 
--- Displays warning task
-RegisterCommand('nex:showWarningTask', function()
-    TriggerEvent('nex-tasks:client:showTask', 'GIG: FREEDOM OF THE PRESS', 'Collect your reward.', 'warning')
+-- Displays important task
+RegisterCommand('nex:showImportantTask', function()
+    TriggerEvent('nex-tasks:client:showTask', 'GIG: FREEDOM OF THE PRESS', 'Collect your reward.', 'important')
 end, false)
 
 -- Hide currently shown task
