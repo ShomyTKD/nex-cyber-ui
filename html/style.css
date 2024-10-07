@@ -5,6 +5,8 @@
     --green-color: #94F0D6;
     --yelow-color: #f7db9f;
     --red-shadow: #8f2403;
+    --red-color: #ff4027;
+    --blue-color: #05d9e8;
 }
 
 html,
@@ -14,7 +16,13 @@ body {
     padding: 0;
     user-select: none;
     overflow: hidden;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
 }
+
+/* TASKS CSS */
 
 .message-wrapper {
     width: 380px;
@@ -24,10 +32,6 @@ body {
     float: right;
     color: var(--yelow-color);
     filter: drop-shadow(1px 1px 6px var(--red-shadow));
-    font-family: "Play", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
 }
 
 .message-bottom {
@@ -41,4 +45,38 @@ body {
 .message-icon {
     width: 20px;
     height: 20px;
+}
+
+/* INTERACTION CSS */
+
+.interaction-wrapper {
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.interaction-body {
+    padding: 0.3rem 1rem;
+    border: 1px solid var(--red-color);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.message {
+    color: var(--red-color);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.key {
+    color: var(--blue-color);
+    font-style: normal;
+    font-size: 1.2rem;
+    border: 1px solid var(--blue-color);
+    padding: 0 0.2rem;
+    position: relative;
+    top: -1.5px;
+    line-height: 1;
+    display: inline-block;
 }

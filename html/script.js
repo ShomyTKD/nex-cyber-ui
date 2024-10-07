@@ -13,8 +13,22 @@ window.addEventListener('message', function (event) {
         $('.message-title').html(event.data.title)
         $('.message-text').html(event.data.task)
     }
+    if (event.data.message == "showInteraction") {
+        $('.interaction-wrapper').fadeIn(100).css('display', 'flex');
+        let key = event.data.key;
+        let text = event.data.text;
+        const textParts = text.split(' ', 2);
+        const firstPart = textParts[0];
+        const secondPart = text.replace(firstPart + ' ', '');
+        const message = $('<p class="message"></p>');
+        message.html(firstPart + ' <i class="key">' + key + '</i> ' + secondPart);
+        $('.interaction-body').empty().append(message);
+    }
 
     if (event.data.message == "hideTask") {
         $('.message-wrapper').fadeOut(100)
+    }
+    if (event.data.message == "hideInteraction") {
+        $('.interaction-wrapper').fadeOut(100);
     }
 })
